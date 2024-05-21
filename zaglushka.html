@@ -7,29 +7,6 @@
 </head>
 <body>
    <h1>Документ для обробки форми</h1>
-<p>Імя: <span id="name"></span></p>
-<p>Прізвище: <span id="surname"></span></p>
-<p>Логін: <span id="login"></span></p>
-<p>Пароль: <span id="password"></span></p>
-<p>Електронна пошта: <span id="email"></span></p>
 
-<script>
-    function displayUserInput() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var name = urlParams.get('name');
-        var surname = urlParams.get('surname');
-        var login = urlParams.get('login');
-        var password = urlParams.get('PASS');
-        var email = urlParams.get('mail');
-
-        document.getElementById('name').textContent = name;
-        document.getElementById('surname').textContent = surname;
-        document.getElementById('login').textContent = login;
-        document.getElementById('password').textContent = password;
-        document.getElementById('email').textContent = email;
-    }
-
-    displayUserInput();
-    </script>
 </body>
 </html>
